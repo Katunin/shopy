@@ -188,6 +188,7 @@ header .top-header .phones-list li span.custom-icon {
 }
 .load-more {
     text-align: center;
+    margin-top: 100px;
 }
 .circle {
     display: inline-block;
@@ -202,18 +203,64 @@ header .top-header .phones-list li span.custom-icon {
 .special-offer {
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    padding: 20px 75px;
 }
 .sale-price span {
     font-family:'Harmonia_black', sans-serif;
     font-size: 32px;
 }
-.special-offer {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
-    padding: 20px 75px;
+.sale-offer {
+    display: flex;
 }
+.sale-offer-square {
+    width: 52px;
+    height: 60px;
+    background-color: #ff5912;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    margin-right: 75px;
+    text-align: center;
+}
+.square-under {
+    position: absolute;
+    transform: rotate(-45deg);
+    z-index: 1;
+    background-color: #ff9060;
+    width: 52px;
+    height: 60px;
+}
+.sale-offer-square span {
+    transform: rotate(-45deg);
+    font-family: 'Harmonia_italic', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+}
+.sale-offer-square .sale-amount {
+    font-family: 'Harmonia_semibold', sans-serif;
+    font-size: 21px;
+}
+
+.sale-offer-title {
+    display: flex;
+    flex-direction: column;
+    margin-right: 75px;
+}
+.sale-offer-title .title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.sale-offer-title .description {
+    line-height: 30px;
+}
+
+
 .adv-area {
     font-size: 16px;
     text-align: center;
+    margin-left: auto;
 }
 .adv-area .banner-size {
     display: block;
@@ -263,7 +310,7 @@ header .top-header .phones-list li span.custom-icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 50px 120px;
 }
 .subscription .title {
     font-size: 18px;
@@ -274,7 +321,7 @@ header .top-header .phones-list li span.custom-icon {
     font-size: 14px;
     margin-left: 20px;
 }
-.subscriptio form {
+.subscription form {
     margin-left: auto;
 }
 .subscription input[type=email] {
