@@ -22,7 +22,7 @@ a{
     text-decoration: none;
 }
 a:focus, a:hover {
-    color: #ffffff;
+    color: #ff5912;
     text-decoration: none;
 }
 img {
@@ -102,7 +102,8 @@ button {
 .item img {
     margin-bottom: 30px;
 }
-.item-title {
+.item-title,
+.item-mini-title {
     font-family: 'Harmonia_bold', sans-serif;
     white-space: nowrap;
     overflow: hidden;
@@ -236,8 +237,112 @@ header .top-header .phones-list li span.custom-icon {
     font-family:'Harmonia_black', sans-serif;
     font-size: 32px;
 }
+.special-offer {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    padding: 20px 75px;
+}
+.adv-area {
+    font-size: 16px;
+    text-align: center;
+}
+.adv-area .banner-size {
+    display: block;
+    font-size: 12px;
+    letter-spacing: .6em;
+    color: rgba(52, 64, 75, .4);
+    margin-top: 12px;
+}
 /* ===== SPECIAL OFFER END ===== */
 
-/* ALL STYLES START */
+/* ===== BEST SALES START ===== */
+.item-mini {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 35px 27px;
+}
+.item-mini:hover {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+.item-mini-description {
+    margin-left: 50px;
+}
+.item-mini-details {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-family: 'Harmonia_semibold', sans-serif;
+    font-size: 16px;
+    color: #ff5912;
+}
 
-/* ALL STYLES END */
+.item-mini .add-to-cart {
+    display: none;
+}
+.item-mini:hover .item-mini-rating,
+.item-mini:hover .item-mini-price {
+    display: none;
+}
+.item-mini:hover .item-mini-details {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.item-mini:hover .add-to-cart {
+    display: block;
+}
+/* ===== BEST SALES END ===== */
+
+/* ===== SUBSCRIPTION START ===== */
+.subscription {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 50px;
+}
+.subscription .title {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.subscription .description {
+    font-family: 'Harmonia_italic', sans-serif;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.subscriptio form {
+    margin-left: auto;
+}
+.subscription input[type=email] {
+    font-family: 'Harmonia_italic', sans-serif;
+    font-size: 14px;
+    color: #7c8791;
+    margin-left: 10px;
+    width: 280px;
+}
+.subscription input[type=submit] {
+    font-family: 'Harmonia_semibold', sans-serif;
+    padding: 17px 30px;
+    background-color: #ff5912;
+    color: #ffffff;
+    font-size: 14px;
+
+}
+/* ===== SUBSCRIPTION END ===== */
