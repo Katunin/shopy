@@ -52,10 +52,14 @@ button {
 .orange-text {
     color: #ff5912;
 }
+.nav > li {
+    display: inline-block;
+}
 /* DEFAULT CLASSES END */
 
 /* DEFAULT COMPONENTS START */
 .custom-icon {
+    position: relative;
     display: inline-block;
 }
 .title {
@@ -82,14 +86,30 @@ button {
 .item:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
 }
+.item img {
+    margin-bottom: 30px;
+}
 .item-title {
+    font-family: 'Harmonia_bold', sans-serif;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.item-price {
+    font-family: 'Harmonia_bold', sans-serif;
+    color: #ff5912;
+    font-size: 18px;
 }
 .default-section {
     padding: 60px 0;
 }
+/* DEFAULT COMPONENTS END */
+
+
+/* ===== HEADER START ===== */
+/* top header */
 header .top-header {
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
@@ -100,12 +120,93 @@ header .top-header .phones-list li + li {
 header .top-header .phones-list li span.custom-icon {
     margin-right: 10px;
 }
+.social-nav a + a {
+    margin-left: 15px;
+}
+.social-nav a:hover {
+    color: #ff5912;
+}
+/* bottom header*/
+.bottom-header {
+    padding: 40px 0;
+}
+.bottom-header .user-controls ul li {
+    display: inline-block;
+}
+.bottom-header .user-controls ul li + li {
+    margin-left: 28px;
+}
+.user-controls {
+    margin-left: auto;
+}
+.cart-count {
+    position: absolute;
+    transform: translateX(-10px);
+    width: 20px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #34404b;
+    margin-top: -23px;
+    color: #ffffff;
+}
+.main-nav {
+    margin-left: 75px;
+    display: flex;
+    align-items: center;
+}
+.main-nav ul li + li {
+    margin-left: 40px;
+}
+.main-nav ul li a{
+    font-size: 16px;
+    padding: 0;
+}
+.main-nav ul li a:hover {
+    color: #ff5912;
+}
+/* carousel */
 .-items-carousel {
     min-height: 650px;
     background: url(../img/carousel-img-1.jpg) no-repeat center / cover;
     margin-bottom: 60px;
 }
-/* DEFAULT COMPONENTS END */
+.promo .set {
+    display: block;
+    font-family: 'Harmonia_semibold', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.order-details {
+    font-family: 'Harmonia_semibold', sans-serif;
+    font-size: 18px;
+}
+.order-details .order {
+    color: #ff5912;
+    margin-left: 30px;
+}
+.load-more {
+    text-align: center;
+}
+.circle {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #ff5912;
+    border-radius: 50%;
+}
+/* ===== HEADER END ===== */
+
+/* ===== SPECIAL OFFER START ===== */
+.special-offer {
+    display: flex;
+    justify-content: space-between;
+}
+.sale-price span {
+    font-family:'Harmonia_black', sans-serif;
+    font-size: 32px;
+}
+/* ===== SPECIAL OFFER END ===== */
 
 /* ALL STYLES START */
 
