@@ -154,6 +154,17 @@ header .top-header .phones-list li span.custom-icon {
 .user-controls {
     margin-left: auto;
 }
+
+.icon-search-ic:hover {
+    background-position: -62px -38px;
+}
+.icon-user-ic:hover {
+    background-position: -42px -38px;
+}
+.icon-cart-ic:hover {
+    background-position: 0 -59px;
+}
+
 .cart-count {
     position: absolute;
     -webkit-transform: translateX(-10px);
@@ -233,6 +244,10 @@ header .top-header .phones-list li span.custom-icon {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
             box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
     padding: 20px 75px;
@@ -303,10 +318,10 @@ header .top-header .phones-list li span.custom-icon {
 }
 .sale-offer-title .title {
     font-size: 22px;
-    margin-bottom: 10px;
 }
 .sale-offer-title .description {
     line-height: 30px;
+    margin-top: 10px;
 }
 
 
@@ -360,6 +375,9 @@ header .top-header .phones-list li span.custom-icon {
 }
 .item-mini-rating {
     margin-right: auto;
+}
+.item-mini-rating .fa-star-o {
+    color: #e9ecf3;
 }
 
 .item-mini .add-to-cart {
@@ -446,8 +464,6 @@ footer .payment-title {
     font-family: 'Harmonia_semibold', sans-serif;
     font-size: 16px;
     line-height: 30px;
-}
-footer .payment-methods {
-    margin-top: 20px;
+    margin: 10px 0 20px;
 }
 /* ===== FOOTER END ===== */

@@ -24,11 +24,17 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-amex-ic {
   background-image: url(../img/sprite.png);
-  background-position: -27px -19px;
+  background-position: 0px -19px;
   width: 27px;
   height: 19px;
 }
 .icon-cart-hover-ic {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -59px;
+  width: 24px;
+  height: 17px;
+}
+.icon-cart-ic {
   background-image: url(../img/sprite.png);
   background-position: -54px -19px;
   width: 24px;
@@ -36,13 +42,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-like-ic {
   background-image: url(../img/sprite.png);
-  background-position: 0px -59px;
+  background-position: -43px -59px;
   width: 19px;
   height: 16px;
 }
 .icon-mail-ic {
   background-image: url(../img/sprite.png);
-  background-position: -19px -59px;
+  background-position: -81px -18px;
   width: 18px;
   height: 11px;
 }
@@ -54,33 +60,45 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-no-name-cart-1-ic {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: -27px -19px;
   width: 27px;
   height: 19px;
 }
 .icon-no-name-cart-2-ic {
   background-image: url(../img/sprite.png);
-  background-position: 0px -19px;
+  background-position: 0px 0px;
   width: 27px;
   height: 19px;
 }
 .icon-phone-book-ic {
   background-image: url(../img/sprite.png);
-  background-position: -81px 0px;
+  background-position: -81px -29px;
   width: 12px;
   height: 12px;
 }
+.icon-search-hover-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -62px -38px;
+  width: 18px;
+  height: 18px;
+}
 .icon-search-ic {
   background-image: url(../img/sprite.png);
-  background-position: -42px -38px;
+  background-position: -81px 0px;
   width: 18px;
   height: 18px;
 }
 .icon-share-ic {
   background-image: url(../img/sprite.png);
-  background-position: -60px -38px;
+  background-position: -24px -59px;
   width: 19px;
   height: 17px;
+}
+.icon-user-hover-ic {
+  background-image: url(../img/sprite.png);
+  background-position: -42px -38px;
+  width: 20px;
+  height: 21px;
 }
 .icon-user-ic {
   background-image: url(../img/sprite.png);
