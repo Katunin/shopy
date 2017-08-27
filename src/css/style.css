@@ -303,6 +303,10 @@ header .top-header .phones-list li span.custom-icon {
 .item-mini:hover .add-to-cart {
     display: block;
 }
+.item-mini .add-to-cart:hover {
+    color: #34404b;
+}
+
 /* ===== BEST SALES END ===== */
 
 /* ===== SUBSCRIPTION START ===== */
@@ -337,6 +341,9 @@ header .top-header .phones-list li span.custom-icon {
     background-color: #ff5912;
     color: #ffffff;
     font-size: 14px;
+}
+.subscription input[type=submit]:hover {
+    background-color: #34404b;
 }
 /* ===== SUBSCRIPTION END ===== */
 
