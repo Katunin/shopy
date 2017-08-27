@@ -289,6 +289,12 @@ header .top-header .phones-list li span.custom-icon {
     font-size: 16px;
     color: #ff5912;
 }
+.item-mini-rating ul {
+    display: flex;
+}
+.item-mini-rating {
+    margin-right: auto;
+}
 
 .item-mini .add-to-cart {
     display: none;
