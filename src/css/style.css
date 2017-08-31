@@ -242,13 +242,22 @@ header .top-header .phones-list li span.custom-icon {
 }
 
 .icon-search-ic:hover {
-    background-position: -62px -38px;
+    background-position: -81px 0px;
 }
 .icon-user-ic:hover {
-    background-position: -42px -38px;
+    background-position: 0px -59px;
 }
 .icon-cart-ic:hover {
-    background-position: 0 -59px;
+    background-position: -20px -59px;
+}
+.icon-share-ic:hover {
+    background-position: -44px -59px;
+}
+.icon-add-to-cart-ic:hover {
+    background-position: 0px -38px;
+}
+.icon-like-ic:hover {
+    background-position: -38px -80px;
 }
 
 .cart-count {
@@ -479,6 +488,9 @@ footer ul li {
     font-size: 14px;
     line-height: 30px;
 }
+footer ul li:hover {
+    color: #ff5912;
+}
 footer .payment-title {
     font-family: 'Harmonia_semibold', sans-serif;
     font-size: 16px;
@@ -509,5 +521,10 @@ footer .payment-title {
 .category-wrap .load-more {
     margin-top: 0;
     margin-bottom: 100px;
+}
+.category-item {
+    font-family: 'Harmonia_semibold', sans-serif;
+    font-size: 16px;
+    line-height: 50px;
 }
 /* ===== CATEGORY PAGE END ===== */
