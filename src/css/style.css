@@ -52,6 +52,9 @@ button {
 .orange-text {
     color: #ff5912;
 }
+.white-bg {
+    background-color: #fff;
+}
 .nav > li {
     display: inline-block;
 }
@@ -275,6 +278,9 @@ header .top-header .phones-list li span.custom-icon {
     display: flex;
     align-items: center;
 }
+.main-nav ul li.active {
+    color: #ff5912;
+}
 .main-nav ul li + li {
     margin-left: 40px;
 }
@@ -282,8 +288,10 @@ header .top-header .phones-list li span.custom-icon {
     font-size: 16px;
     padding: 0;
 }
-.main-nav ul li a:hover {
+.main-nav ul li a:hover,
+.main-nav ul li a:focus {
     color: #ff5912;
+    background: none;
 }
 /* carousel */
 .-items-carousel {
@@ -308,7 +316,8 @@ header .top-header .phones-list li span.custom-icon {
 }
 .load-more {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 75px;
+    padding: 25px 0;
 }
 .circle {
     display: inline-block;
@@ -444,7 +453,8 @@ header .top-header .phones-list li span.custom-icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px 120px;
+    padding: 50px 60px;
+    margin-bottom: 60px;
 }
 .subscription .title {
     font-size: 18px;
