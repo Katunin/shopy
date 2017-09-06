@@ -537,4 +537,16 @@ footer .payment-title {
     font-size: 16px;
     line-height: 50px;
 }
+.range {
+    margin-top: 40px;
+}
+.min-value, .max-value {
+    position: absolute;
+    top: -150%;
+    font-size: 14px;
+    color: #34404b;
+    font-family:'Harmonia_semibold', sans-serif;
+    transform: translateX(-50%);
+    left: 50%;
+}
 /* ===== CATEGORY PAGE END ===== */
