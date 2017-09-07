@@ -1,0 +1,108 @@
+.jq-number {
+	position: relative;
+	vertical-align: middle;
+	padding: 0 17px;
+}
+.jq-number__field {
+	width: 50px;
+}
+.jq-number__field:hover {
+	border-color: #B3B3B3;
+}
+.jq-number__field input {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 100%;
+	padding: 5px 0;
+	border: none;
+	outline: none;
+	background: none;
+	font-size: 18px;
+	color: #ff5912;
+	text-align: center;
+}
+.jq-number__spin {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 32px;
+	height: 14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+.jq-number__spin.minus {
+	top: 0;
+	bottom: auto;
+}
+.jq-number__spin:hover {
+}
+.jq-number__spin:active {
+}
+.jq-number__spin:after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 11px;
+	width: 0;
+	height: 0;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #999;
+	border-left: 5px solid transparent;
+}
+.jq-number__spin.minus:after {
+	top: 5px;
+	border-top: 5px solid #999;
+	border-right: 5px solid transparent;
+	border-bottom: none;
+	border-left: 5px solid transparent;
+}
+.jq-number__spin.minus:hover:after {
+	border-top-color: #000;
+}
+.jq-number__spin.plus:hover:after {
+	border-bottom-color: #000;
+}
+
+.jq-number__spin {
+	right: 0;
+	height: 32px;
+}
+.jq-number__spin.plus {
+	left: 0;
+	right: auto;
+}
+.jq-number__spin:before {
+	content: '';
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	width: 12px;
+	height: 2px;
+	border: none;
+	background: #666;
+}
+.jq-number__spin.minus:after {
+	display: none;
+}
+.jq-number__spin.plus:after {
+	top: 10px;
+	left: 15px;
+	width: 2px;
+	height: 12px;
+	border: none;
+	background: #666;
+}
+.jq-number__spin:hover:before,
+.jq-number__spin.plus:hover:after {
+	background: #000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	/* display: none; <- Crashes Chrome on hover */
+	-webkit-appearance: none;
+	margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

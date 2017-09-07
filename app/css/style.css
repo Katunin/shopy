@@ -41,6 +41,28 @@ button {
 /* RESET END */
 
 /* DEFAULT CLASSES START */
+.btn-default {
+    font-family: 'Harmonia_semibold', sans-serif;
+    padding: 17px 30px;
+    background-color: #ff5912;
+    color: #ffffff;
+    font-size: 14px;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+}
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus,
+.btn:focus,
+.btn:active:focus {
+    background-color: #34404b;
+    color: #ffffff;
+    outline: none;
+}
+.btn-radius {
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+}
 .flex-container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -208,6 +230,7 @@ button {
 .checkbox-group input[type="checkbox"] {
     display: none;
 }
+
 .checkbox-group label {
     font-size: 16px;
     color: #34404b;
@@ -563,16 +586,7 @@ header .top-header .phones-list li span.custom-icon {
     margin-left: 10px;
     width: 280px;
 }
-.subscription input[type=submit] {
-    font-family: 'Harmonia_semibold', sans-serif;
-    padding: 17px 30px;
-    background-color: #ff5912;
-    color: #ffffff;
-    font-size: 14px;
-}
-.subscription input[type=submit]:hover {
-    background-color: #34404b;
-}
+
 /* ===== SUBSCRIPTION END ===== */
 
 /* ===== FOOTER START ===== */
@@ -647,3 +661,61 @@ footer .payment-title {
     width: 330px;
 }
 /* ===== CATEGORY PAGE END ===== */
+
+/* ===== PRODUCT PAGE END ===== */
+.choose-size span {
+    margin-right: 40px;
+}
+.size-radio input[type="radio"]{
+    display: none;
+}
+.size-radio label {
+    font-size: 14px;
+    color: #34404b;
+    font-family:'Harmonia_semibold', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size-radio input[type="radio"]:checked + label {
+    color: #ff5912;
+    font-size: 18px;
+}
+.size-radio + .size-radio {
+    margin-left: 20px;
+}
+.order-form {
+    padding: 40px 0;
+    border-top: 1px solid #edeff1;
+    border-bottom: 1px solid #edeff1;
+}
+.order-form span {
+    font-family: 'Harmonia_semibold', sans-serif;
+    color: #34404b;
+    font-size: 18px;
+}
+.product-price {
+    margin-right: auto;
+}
+.product-share {
+
+}
+.product-share li {
+    margin-right: 30px;
+}
+.order-now .btn {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.product-price span {
+    font-family: 'Harmonia Sans Pro Cyr Black', sans-serif;
+    font-size: 20px;
+    color: #34404b;
+}
+.product-additional-desc .set {
+    margin-bottom: 30px;
+}
+.product-additional-desc .subtitle {
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+/* ===== PRODUCT PAGE END ===== */
