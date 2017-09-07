@@ -639,4 +639,11 @@ footer .payment-title {
             transform: translateX(-50%);
     left: 50%;
 }
+.product-wrap {
+    padding: 70px 125px;
+    background-color: #ffffff;
+}
+.product-carousel {
+    width: 330px;
+}
 /* ===== CATEGORY PAGE END ===== */
