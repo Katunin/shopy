@@ -147,6 +147,9 @@ button {
     margin: 30px 0;
     font-size: 18px;
     color: #34404b;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .item:hover .item-title {
     color: #ff5912;
@@ -199,6 +202,18 @@ button {
 }
 .more-info-on-hover .item-controls li + li{
     margin-left: 30px;
+}
+
+@media (max-width: 1199px) {
+    .item-description,
+    .more-info-on-hover {
+        padding: 0;
+    }
+}
+@media (max-width: 991px) {
+    .item {
+        margin-bottom: 30px;
+    }
 }
 
 .default-section {
@@ -314,7 +329,24 @@ header .top-header .phones-list li span.custom-icon {
     color: #ff5912;
     background: none;
 }
+@media (max-width: 991px) {
+    header .bottom-header .main-nav {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+    }
+    .bottom-header .user-controls {
+        margin: 0;
+    }
+}
+
+
 /* carousel */
+.item-flexslider {
+    position: relative;
+    padding-left: calc(8.333% + 30px);
+}
 .-items-carousel {
     min-height: 650px;
     background: url(../img/carousel-img-1.jpg) no-repeat center / cover;

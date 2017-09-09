@@ -64,7 +64,7 @@ $( function() {
         $(this).attr('min', values[0]);
         range.slider( "option", "values", [ values[0] , this.value ] );
 
-    })
+    });
 
 
 
@@ -77,9 +77,22 @@ $( function() {
         });
     });
 
+    // flexslide homer
+    $(window).load(function() {
+        $('.item-flexslider').flexslider({
+            animation: "slide"
+        });
+    });
 
-    /// formstayler init
+    // slick nav init
+    $('.main-nav').slicknav({
+        appendTo: 'header .bottom-header .flex-container',
+        label: ''
+    });
+
+    // formstayler init
     $('.custom-number').styler();
+
 
 });
 
