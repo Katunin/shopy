@@ -90,6 +90,11 @@ button {
 .green-bg {
     background-color: #2fd967;
 }
+@media (max-width: 991px) {
+    .nav > li {
+        display: block;
+    }
+}
 /* DEFAULT CLASSES END */
 
 /* DEFAULT COMPONENTS START */
@@ -250,6 +255,9 @@ button {
 
 /* ===== HEADER START ===== */
 /* top header */
+.header {
+    position: relative;
+}
 header .top-header {
     border-bottom: 1px solid #edeff1;
     padding: 20px 0;
